@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    font-weight: 400;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 1400px;
+    background: url(../images/bg-intro-desktop.png)center center no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+}
+
+.containt-left {
+    padding: 0 50px 0 100px;
+    color: #fff;
+    width: 50%;
+}
+.containt-left .title{
+  
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+.containt-left .paragraph{
+    line-height: 25px;
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.containt-right .price{
+    background-color: hsl(248, 32%, 49%);
+    color: #ffffff;
+    padding: 15px ;
+    border-radius: 9px;
+    text-align: center;
+    font-weight: bold;
+}
+.containt-right .price span{
+    color: hsl(246, 25%, 77%);
+    font-weight: 400;
+}
+
+.card-right{
+    width: 450px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 35px;
+    margin: 19px 0;
+    
+}
+.card-right input{
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+.card-right .btn{
+    background-color:  hsl(154, 59%, 51%);
+    padding: 14px 115px;
+    border-radius: 9px;
+    border: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.card-right .btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.card-right .terms{
+    color:hsl(246, 25%, 77%);;
+    margin-top: 15px;
+    font-size: 11px;
+}
+.card-right .terms span{
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+
+
