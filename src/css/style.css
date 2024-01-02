@@ -1,96 +1,111 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
-    font-weight: 400;
-    
+    font-weight: 400; 
+    background-image: url(../images/bg-intro-desktop.png);
+    background-color:  hsl(0, 100%, 74%) ;
 }
 
-.container {
+.container{
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.card{
-    display: flex;
     align-items: center;
-    justify-content: center;
     height: 100vh;
-    width: 1400px;
-    background: url(../images/bg-intro-desktop.png)center center no-repeat;
-    background-size: cover;
-    background-color: hsl(0, 100%, 74%);
+}
+.container .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
 }
 
-.containt-left {
-    padding: 0 50px 0 100px;
+.container .card .containt-left{
+    width: 470px;
     color: #fff;
-    width: 50%;
 }
-.containt-left .title{
-  
-    font-size: 45px;
-    line-height: 45px;
-    margin-bottom: 30px;
+.container .card .containt-left .title{
+line-height: 38px;
+margin-bottom: 15px;
+font-size: 35px;
 }
-.containt-left .paragraph{
-    line-height: 25px;
-    opacity: 0.9;
-    font-weight: 500;
+.container .card .containt-left .paragraph{
     font-size: 14px;
+    opacity: 0.8;
+    line-height: 25px;
 }
-
-.containt-right .price{
+.containt-right .card-price .price{
     background-color: hsl(248, 32%, 49%);
-    color: #ffffff;
-    padding: 15px ;
-    border-radius: 9px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    color: #fff;
+    margin-bottom: 10px;
     text-align: center;
+}
+.containt-right .card-price .price span{
     font-weight: bold;
 }
-.containt-right .price span{
-    color: hsl(246, 25%, 77%);
-    font-weight: 400;
-}
-
-.card-right{
-    width: 450px;
-    height: 420px;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 35px;
-    margin: 19px 0;
-    
-}
-.card-right input{
-    margin-bottom: 15px;
-    border-radius: 10px;
-    width: 100%;
-    padding: 15px;
-    border: 1px solid hsl(246, 25%, 77%);
-}
-.card-right .btn{
-    background-color:  hsl(154, 59%, 51%);
-    padding: 14px 115px;
-    border-radius: 9px;
-    border: none;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-.card-right .btn:hover{
+.containt-right .card-price .price:hover{
     opacity: 0.9;
     cursor: pointer;
 }
-.card-right .terms{
-    color:hsl(246, 25%, 77%);;
-    margin-top: 15px;
-    font-size: 11px;
+.container .card .card-right{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 7px;
 }
-.card-right .terms span{
-    color: hsl(0, 100%, 74%);
+.container .card .card-right .input{
+    border-radius: 7px;
+    padding: 10px;
+}
+.input{
+    border: 1px solid #808080;
+}
+.card-right .btn{
+    background-color: hsl(154, 59%, 51%);
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.card-right .btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.containt-right .terms{
+    font-size: 10px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+.containt-right .terms span{
+    color:  hsl(0, 100%, 74%) ;
     font-weight: bold;
+    cursor: pointer;
 }
 
-
+.campo-obrigatorio{
+    margin-top: -15px;
+    font-size: 11px;
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+.campo-obrigatorio.ativo{
+    display: none;
+}
+.campo-requered{
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: top 8px right 11px;
+    background-size: 15px;
+    border: 1px solid red;
+}
+.campo-preenchido{
+    border: 1px solid green;
+}
